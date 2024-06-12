@@ -15,11 +15,11 @@ const AllClassed = () => {
 
 
     const handleApprove = async (item) => {
-        console.log(item);
+        // console.log(item);
         const res = await axiosSecure.patch(`/classes/class-requests/${item._id}/approve`);
-        console.log(res);
+        // console.log(res);
         if (res.data) {
-            console.log(res);
+            // console.log(res);
 
             // alert(' ldkjflaskj');
             Swal.fire({
@@ -35,11 +35,11 @@ const AllClassed = () => {
 
 
     const handleReject = async (item) => {
-        console.log(item);
+        // console.log(item);
         const res = await axiosSecure.patch(`/classes/class-requests/${item._id}/reject`);
-        console.log(res.data);
+        // console.log(res.data);
         if (res.data) {
-            console.log(res.data);
+            // console.log(res.data);
 
             Swal.fire({
                 position: "top-end",
@@ -50,7 +50,7 @@ const AllClassed = () => {
             });
             refetch();
         }
-        console.log('with image url', res.data);
+        // console.log('with image url', res.data);
     };
 
     const handleProgressClick = (item) => {

@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const axiosPublic = axios.create({
-    baseURL: 'http://localhost:1001'
+    baseURL: 'https://skillshare-server-zeta.vercel.app'
 })
 
 

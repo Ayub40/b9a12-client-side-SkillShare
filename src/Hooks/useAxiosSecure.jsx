@@ -4,7 +4,7 @@ import useAuth from "./useAuth";
 
 
 export const axiosSecure = axios.create({
-    baseURL: 'http://localhost:1001'
+    baseURL: 'https://skillshare-server-zeta.vercel.app'
 })
 
 const useAxiosSecure = () => {

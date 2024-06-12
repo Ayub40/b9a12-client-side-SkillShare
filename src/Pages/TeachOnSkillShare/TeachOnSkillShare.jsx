@@ -35,7 +35,7 @@ const TeachOnSkillShare = () => {
             // refetchUser(); 
         }
 
-        console.log(data);
+        // console.log(data);
     }
 
 

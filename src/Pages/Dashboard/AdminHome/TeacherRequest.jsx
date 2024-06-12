@@ -7,7 +7,7 @@ import useAuth from "../../../Hooks/useAuth";
 
 const TeacherRequest = () => {
     const { user } = useAuth();
-    console.log(user);
+    // console.log(user);
     const axiosSecure = useAxiosSecure();
 
     const { data: requests = [], refetch } = useQuery({

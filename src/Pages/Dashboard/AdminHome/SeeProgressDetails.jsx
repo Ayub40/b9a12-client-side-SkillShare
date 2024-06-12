@@ -3,7 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const SeeProgressDetails = () => {
     const { name, email, price, description, image, title } = useLoaderData();
-    console.log(name, email, price, description, image, title);
+    // console.log(name, email, price, description, image, title);
 
     return (
         <div>

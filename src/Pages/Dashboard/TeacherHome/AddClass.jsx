@@ -15,7 +15,7 @@ const AddClass = () => {
     const axiosPublic = useAxiosPublic();
 
     const onSubmit = async (data) => {
-        console.log(data);
+        // console.log(data);
         // image upload to imgbb and then get an url
         const imgFile = { image: data.image[0] }
         const res = await axiosPublic.post(image_hosting_api, imgFile, {
@@ -37,7 +37,7 @@ const AddClass = () => {
             }
             // 
             const classRes = await axiosSecure.post('/classes', classItem);
-            console.log(classRes.data)
+            // console.log(classRes.data)
             if (classRes.data.insertedId) {
                 // show success popup
                 reset();
@@ -50,7 +50,7 @@ const AddClass = () => {
                 });
             }
         }
-        console.log('with image url', res.data);
+        // console.log('with image url', res.data);
     }
 
 

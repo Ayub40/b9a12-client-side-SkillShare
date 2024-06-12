@@ -19,7 +19,7 @@ const Login = () => {
     const location = useLocation();
 
     const from = location.state?.from?.pathname || '/';
-    console.log('state in the location login page', location.state);
+    // console.log('state in the location login page', location.state);
 
     const { register, handleSubmit, formState: { errors } } = useForm();
 
@@ -28,7 +28,7 @@ const Login = () => {
         try {
             const result = await signIn(email, password);
             const user = result.user;
-            console.log(user);
+            // console.log(user);
             Swal.fire({
                 title: "User Login Successful",
                 showClass: {

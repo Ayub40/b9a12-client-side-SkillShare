@@ -13,7 +13,7 @@ const Reviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:1001/reviews')
+        fetch('https://skillshare-server-zeta.vercel.app/reviews')
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])

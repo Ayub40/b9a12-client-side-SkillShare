@@ -66,7 +66,7 @@ export const router = createBrowserRouter([
             {
                 path: 'classDetails/:id',
                 element: <PrivateRoute><ClassDetails></ClassDetails></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:1001/classes/${params.id}`)
+                loader: ({ params }) => fetch(`https://skillshare-server-zeta.vercel.app/classes/${params.id}`)
             },
             {
                 path: 'payment',
@@ -92,7 +92,7 @@ export const router = createBrowserRouter([
             {
                 path: 'updateItem/:id',
                 element: <TeacherRoute><UpdateItem></UpdateItem></TeacherRoute>,
-                loader: ({ params }) => fetch(`http://localhost:1001/classes/${params.id}`)
+                loader: ({ params }) => fetch(`https://skillshare-server-zeta.vercel.app/classes/${params.id}`)
             },
             // admin routes
             {
@@ -116,7 +116,7 @@ export const router = createBrowserRouter([
             {
                 path: 'seeProgressDetails/:id',
                 element: <AdminRoute><SeeProgressDetails></SeeProgressDetails></AdminRoute>,
-                loader: ({ params }) => fetch(`http://localhost:1001/classes/${params.id}`)
+                loader: ({ params }) => fetch(`https://skillshare-server-zeta.vercel.app/classes/${params.id}`)
             },
             {
                 path: 'profile',
